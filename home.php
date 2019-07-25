@@ -1,9 +1,11 @@
-<?php get_template_part('templates/page', 'header'); ?>
+
+<?php
+  //get_template_part('templates/page', 'header'); ?>
 
 <div class="jumbotron">
   
   <?php
-    echo do_shortcode("[metaslider id=16]");
+    //echo do_shortcode("[metaslider id=16]");
   ?>
 
 </div>
@@ -26,5 +28,7 @@
       <li class="next"><?php previous_posts_link(__('Newer posts &rarr;', 'roots')); ?></li>
     </ul>
   </nav>
-<?php endif; ?>
+<?php endif;
+get_footer();
+?>
 

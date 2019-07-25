@@ -21,3 +21,7 @@
         wp_get_theme()->get('Version')
     );
   }
+  
+  if(is_user_logged_in()) {
+    add_filter('show_admin_bar', '__return_true', 1000);
+  }
