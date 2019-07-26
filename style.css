@@ -14,6 +14,7 @@
 
     - Button
     - Navigation
+    - Sign Up
 */
 
 :root {
@@ -61,3 +62,99 @@
     margin-top: 0.5em;
     margin-left: 11em;
 }
+/** Sign Up
+=========================== */
+/* Robly CSS. For the Robly email marketing sign up form located on the /join-us page. This scc is enqueued on page id = 46 only. See functions.php */
+
+#robly_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width: 800px; }
+#robly_embed_signup form {display:block; position:relative; text-align:left;}
+#robly_embed_signup h2 {font-weight:bold; padding:0; margin:15px 0; font-size:1.3em;}
+#robly_embed_signup input {border:1px solid #999; -webkit-appearance:none;}
+#robly_embed_signup input[type=checkbox]{-webkit-appearance:checkbox;}
+#robly_embed_signup input[type=radio]{-webkit-appearance:radio;}
+#robly_embed_signup input:focus {border-color:#333;}
+#robly_embed_signup .button {background-color: #aaa; border: 0 none; border-radius:4px; color: #FFFFFF; cursor: pointer; display: inline-block; font-size:15px; font-weight: bold; height: 32px; line-height: 32px; margin: 0 5px 10px 0; padding:0; text-align: center; text-decoration: none; vertical-align: top; white-space: nowrap; width: auto;}
+#robly_embed_signup .button:hover {background-color:#777;}
+
+#robly_embed_signup input.slim_button,
+#joinus-submit.slim_button {
+    background-color: #f2830a;
+    border: 0 none;
+    border-radius:0px;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-size:15px;
+    font-weight: bold;
+    height: 32px;
+    line-height: 32px;
+    margin: 0 5px 10px 0;
+    padding:0 15px;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: top;
+    white-space: nowrap;
+    width: auto;
+}
+#robly_embed_signup .slim_button:hover {background-color:#777;}
+#robly_embed_signup .small_meta {font-size: 11px;}
+#robly_embed_signup .nowrap {white-space:nowrap;}
+#robly_embed_signup .clear {clear:none; display:inline;visibility:visible;}
+#robly_embed_signup .robly_field_group {clear:left; position:relative; width:96%; padding-bottom:3%; min-height:50px;}
+#robly_embed_signup .size1of2 {clear:none; float:left; display:inline-block; width:46%; margin-right:4%;}
+#robly_embed_signup .size1of2 {margin-right:2%;}
+#robly_embed_signup .robly_field_group label {display:block; margin-bottom:3px; font-size: 1.0em; font-weight: 100; padding-bottom:1px;}
+#robly_embed_signup .robly_field_group input {display:block; width:100%; padding:8px 0; text-indent:2%;}
+#robly_embed_signup .robly_field_group select {display:inline-block; width:99%; padding:5px 0; margin-bottom:2px;}
+#robly_embed_signup .datefield, #robly_embed_signup .phonefield_us{padding:5px 0;}
+#robly_embed_signup .datefield input, #robly_embed_signup .phonefield_us input{display:inline; width:60px; margin:0 2px; letter-spacing:1px; text-align:left; padding:5px 0 2px 0;}
+#robly_embed_signup .phonefield_us .phonearea input, #robly_embed_signup .phonefield_us .phonedetail1 input{width:40px;}
+#robly_embed_signup .datefield .monthfield input, #robly_embed_signup .datefield .dayfield input{width:35px;}
+#robly_embed_signup .datefield label, #robly_embed_signup .phonefield_us label{display:none;}
+#robly_embed_signup .indicates-required {text-align:right; font-size:11px; margin-right:4%;}
+#robly_embed_signup .asterisk {color:#c60; font-size:150%;}
+#robly_embed_signup .robly_field_group .asterisk {position:relative;top:5px; left:2px;}
+#robly_embed_signup label {display:block; font-size:16px; padding-bottom:10px; font-weight:bold;}
+#robly_embed_signup input.email {display:block; padding:8px 0; margin:0 4% 10px 0; text-indent:5px; width:90%; min-width:130px;}
+#robly_embed_signup input.slim_email {
+    display:inline-block;
+    padding:8px 0;
+    margin:0 4% 10px 0;
+    text-indent:5px;
+    width:60%;
+}
+#footer-signup input.slim_email{
+    display:inline-block;
+    padding:8px 0;
+    margin:0 4% 10px 0;
+    text-indent:5px;
+    width:20%;
+}
+.widget-signup {
+    padding-top: 30px;
+    border-top: 4px solid #e5e2d6;
+    margin: 30px 0 0 0;
+}
+#robly_embed_signup input.button {width:40%; margin:0 0 10px 0; min-width:90px;}
+#robly_embed_signup .robly_field_group.input_group ul {margin:0; padding:5px 0; list-style:none;}
+#robly_embed_signup .robly_field_group.input_group ul li {display:block; padding:3px 0; margin:0;}
+#robly_embed_signup .robly_field_group.input_group label {display:inline;}
+#robly_embed_signup .robly_field_group.input_group input {display:inline; width:auto; border:none;}
+#robly_embed_signup div#robly_responses {float:left; top:-1.4em; padding:0em .5em 0em .5em; overflow:hidden; width:90%;margin: 0 5%; clear: both;}
+#robly_embed_signup div.response {margin:1em 0; padding:1em .5em .5em 0; font-weight:bold; float:left; top:-1.5em; z-index:1; width:80%;}
+#robly_embed_signup #robly_error_response {display:none;}
+#robly_embed_signup #robly_success_response {color:#529214; display:none;}
+#robly_embed_signup label.error {display:block; float:none; width:auto; margin-left:1.05em; text-align:left; padding:.5em 0;}
+#robly_embedded-subscribe {clear:both; width:auto; display:block; margin:1em 0 1em 5%;}
+#robly_embed_signup #num-subscribers {font-size:1.1em;}
+#robly_embed_signup #num-subscribers span {padding:.5em; border:1px solid #ccc; margin-right:.5em; font-weight:bold;}
+#robly_embed_signup .power {postion: relative; float: right; margin-right: 16px; height:32px;}
+#robly_embed_signup #slim_power {float:none;}
+#robly_embed_signup .power p {font-size:12px; margin:0px; font-weight:bold; line-height:32px; color:#666;}
+#robly_embed_signup .power p a {text-decoration:none; font-weight:bold; color:#333;}
+#robly_embed_signup .power p a:hover {text-decoration:none; color:#000;}
+@media (max-width: 600px) {
+    .g-recaptcha {transform: scale(0.77); -webkit-transform:scale(0.77); transform-origin:0 0; -webkit-transform-origin:0 0; }
+}
+/* Add your own Robly form styles to your site stylesheet or in this style block.
+   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */

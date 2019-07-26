@@ -20,9 +20,8 @@
     wp_enqueue_style($parent_asset_app_css, get_template_directory_uri() . '/assets/css/app.css');
     //wp_enqueue_style($parent_asset_main_min_css, get_template_directory_uri() . '/assets/css/main.min.css');
     wp_enqueue_style($parent_sass_css, get_template_directory_uri() . '/sass.css');
-    
     wp_enqueue_script('custom-js', get_stylesheet_directory_uri() . '/assets/js/custom.js', array(), '1.0.0', true );
-    
+    wp_enqueue_script('join-us-recaptcha', '//www.google.com/recaptcha/api.js');
   }
   
   if(is_user_logged_in()) {
