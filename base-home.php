@@ -30,7 +30,7 @@
     </div>
   </div><!-- END OF #mission -->
   
-  <div class="row" id="features">
+  <!-- <div class="row" id="features"> -->
     
     <!-- <div class="col-md-4">
       <h2>Donate</h2>
@@ -62,7 +62,7 @@
        </ul>-->
    <!-- </div> -->
   
-  </div><!-- END OF features -->
+  <!-- </div> --><!-- END OF features -->
   
   
   <div class="content">
@@ -84,51 +84,53 @@
       </div>
     </div>
     
-    <div class="row latest-news" >
+    <!-- <div class="row latest-news" >
       
       <h3 class="col-xs-12">Latest News</h3>
       
-      <?php
+       <?php
         
-        $args = array(
+      /*  $args = array(
             'posts_per_page' => 4
         );
-        $home_query = new WP_Query( $args );
+        $home_query = new WP_Query( $args ); */
       
       ?>
       
-      <?php if ( $home_query->have_posts() ) : while ( $home_query->have_posts()) :$home_query->the_post(); ?>
+      <?php //if ( $home_query->have_posts() ) : while ( $home_query->have_posts()) :$home_query->the_post(); ?>
         
         <?php
         
-        $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
-        $cat = get_the_category();
+       /* $imgsrc = wp_get_attachment_image_src( get_post_thumbnail_id( $post->ID ), "Full");
+        $cat = get_the_category(); */
         
         ?>
         
-        <div class="<?php echo $cat[0]->cat_name; ?>-post post-box col-xs-12 col-sm-6" style="background: #E5E1D6 url(<?php echo $imgsrc[0]; ?>) 50% 50% no-repeat; background-size: cover; ">
+        <div class="<?php //echo $cat[0]->cat_name; ?>-post post-box col-xs-12 col-sm-6" style="background: #E5E1D6
+        url(<?php //echo $imgsrc[0]; ?>) 50% 50% no-repeat; background-size: cover; ">
           <div class="story-info col-xs-12" >
             
-            <span class="story-cat"><?php the_category(); ?></span>
+            <span class="story-cat"><?php //the_category(); ?></span>
             
             <span class="story-title">
-                  <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>" ><h1><?php the_title(); ?></h1></a><br /><?php the_time('F j, Y'); ?></span>
+                  <a href="<?php //the_permalink(); ?>" title="<?php //the_title_attribute(); ?>" ><h1><?php
+                  //the_title(); ?></h1></a><br /><?php //the_time('F j, Y'); ?></span>
           
           </div>
         </div>
       
       
-      <?php endwhile; else: ?>
+      <?php //endwhile; else: ?>
         
         <p>Sorry, there are no posts to display</p>
       
-      <?php endif; ?>
+      <?php //endif; ?>
       
       <div class="col-xs-6 col-xs-push-3">
-        <a class="button lrg" href="<?php echo get_site_url(); ?>/?page_id=70">More Updates</a>
+        <a class="button lrg" href="<?php //echo get_site_url(); ?>/?page_id=70">More Updates</a>
       </div>
     
-    </div><!-- END OF .latest-news -->
+    </div> END OF .latest-news -->
   
   </div><!-- END OF .content -->
   

@@ -10,4 +10,18 @@
  License URI:  http://www.gnu.org/licenses/gpl-2.0.html
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  bosschild
+
+
+    - Navigation
 */
+
+/** Naviagtion
+============================ */
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    color: #000 !important;
+}
+.dropdown-menu.dropdown-margin {
+    margin-top: 0.5em;
+    margin-left: 11em;
+}
