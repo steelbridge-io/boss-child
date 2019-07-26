@@ -12,9 +12,45 @@
  Text Domain:  bosschild
 
 
+    - Button
     - Navigation
 */
 
+:root {
+    --boss-orange: #f2830a;
+    --boss-btn-hover: #77715E;
+}
+
+/** Button
+============================ */
+.btn.btn-boss {
+    padding: 2rem 11rem;
+    font-size: 100%;
+    overflow: hidden;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 1em;
+    border-radius: 0;
+}
+.btn-boss {
+    color: #ffffff;
+    background-color: var(--boss-orange);
+    border-color: var(--boss-orange);
+}
+.btn.btn-boss:hover,
+.btn-boss:focus,
+.btn-boss:active,
+.btn-boss.active,
+.open .dropdown-toggle.btn-boss {
+    color: #ffffff;
+    background-color: var(--boss-btn-hover);
+    border-color: var(--boss-btn-hover);
+}
+.btn-boss:active,
+.btn-boss.active,
+.open .dropdown-toggle.btn-boss {
+    background-image: none;
+}
 /** Naviagtion
 ============================ */
 .dropdown-menu>li>a:hover,
