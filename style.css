@@ -52,7 +52,8 @@
 .open .dropdown-toggle.btn-boss {
     background-image: none;
 }
-/** Naviagtion
+
+/** Navigtion
 ============================ */
 .dropdown-menu>li>a:hover,
 .dropdown-menu>li>a:focus {
@@ -61,6 +62,10 @@
 .dropdown-menu.dropdown-margin {
     margin-top: 0.5em;
     margin-left: 11em;
+}
+.container.dash #dash-nav-wrap .nav.nav-pills ul {
+    /* Removes a list of bullets, a UL that renders upon login */
+    display: none;
 }
 /** Sign Up
 =========================== */
