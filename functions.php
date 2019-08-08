@@ -57,3 +57,8 @@ require_once( get_stylesheet_directory() . '/lib/gutenberg.php');
     // file exists... require it.
     require_once get_stylesheet_directory() . '/wp-bootstrap-navwalker.php';
   }
+
+function boss_add_woocommerce_support() {
+  add_theme_support( 'woocommerce' );
+}
+add_action( 'after_setup_theme', 'boss_add_woocommerce_support' );

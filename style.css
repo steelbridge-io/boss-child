@@ -25,13 +25,15 @@
 /** Button
 ============================ */
 .btn.btn-boss {
-    padding: 2rem 11rem;
+    padding: 2rem 8.389rem;
     font-size: 100%;
     overflow: hidden;
     text-transform: uppercase;
     font-weight: 700;
     line-height: 1em;
     border-radius: 0;
+    margin: 0 auto;
+    display: block;
 }
 .btn-boss {
     color: #ffffff;

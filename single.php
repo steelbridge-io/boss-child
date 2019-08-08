@@ -7,7 +7,7 @@
  * @since Twenty Fourteen 1.0
  */
 
-get_header(); ?>
+//get_header(); ?>
   
   <div id="primary" class="content-area">
     <div id="content" class="site-content" role="main">
