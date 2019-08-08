@@ -62,3 +62,14 @@ function boss_add_woocommerce_support() {
   add_theme_support( 'woocommerce' );
 }
 add_action( 'after_setup_theme', 'boss_add_woocommerce_support' );
+
+/**
+ * Filter the except length to 20 words.
+ *
+ * @param int $length Excerpt length.
+ * @return int (Maybe) modified excerpt length.
+ */
+function boss_custom_excerpt_length( $length ) {
+  return 30;
+}
+add_filter( 'excerpt_length', 'boss_custom_excerpt_length', 999 );
