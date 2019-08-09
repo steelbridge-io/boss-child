@@ -16,4 +16,18 @@
   </div>
 </div>
 
+$custom_query = new WP_Query(
+array(
+'post_type' => 'work_projects',
+'work_type' => 'website_development',
+'posts_per_page' => 100
+)
+);
+if ( $custom_query->have_posts() ) : while ( $custom_query->have_posts() ) : $custom_query->the_post();
+
+the_post_thumbnail($size);
+the_title();
+the_content();
+
+endwhile; endif; wp_reset_query();
 
