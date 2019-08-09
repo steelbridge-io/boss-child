@@ -1,6 +1,7 @@
 <?php
 
 require_once( get_stylesheet_directory() . '/lib/gutenberg.php');
+require_once( get_stylesheet_directory() . '/lib/category-temp-settings.php');
   
   add_action('wp_enqueue_scripts', 'boss_enqueue_styles_scripts');
   function boss_enqueue_styles_scripts()
@@ -63,13 +64,3 @@ function boss_add_woocommerce_support() {
 }
 add_action( 'after_setup_theme', 'boss_add_woocommerce_support' );
 
-/**
- * Filter the except length to 20 words.
- *
- * @param int $length Excerpt length.
- * @return int (Maybe) modified excerpt length.
- */
-function boss_custom_excerpt_length( $length ) {
-  return 30;
-}
-add_filter( 'excerpt_length', 'boss_custom_excerpt_length', 999 );

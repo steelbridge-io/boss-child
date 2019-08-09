@@ -13,6 +13,7 @@
 
     - Bootstrap
     - Button
+    - JetPack
     - Navigation
     - Sign Up
 */
@@ -76,6 +77,14 @@
 .btn-boss.active,
 .open .dropdown-toggle.btn-boss {
     background-image: none;
+}
+/** JetPack
+============================ */
+.sharedaddy {
+    padding-left: 0 !important;
+}
+.sharedaddy:before {
+    display: none !important;
 }
 
 /** Navigtion
