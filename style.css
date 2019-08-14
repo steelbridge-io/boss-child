@@ -26,22 +26,22 @@
 ============================ */
 *, *:before, *:after {box-sizing:  border-box !important;}
 
-
 .masonry.row {
     -moz-column-width: 15em;
     -webkit-column-width: 15em;
     -moz-column-gap: 1em;
     -webkit-column-gap:1em;
-
 }
-
+.masonry.row .thumbnail {
+    background-color: #e5e2d6;
+    padding-top: 1.618em;
+}
 .masonry.row > .col-md-4 {
     display: inline-block;
     padding:  .3rem;
     width:  100%;
     float:none;
 }
-
 .masonry.caption {
     position:relative;
     display: block;
