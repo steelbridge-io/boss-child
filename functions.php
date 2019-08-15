@@ -14,6 +14,7 @@ require_once( get_stylesheet_directory() . '/lib/front-page-blog.php');
     $parent_sass_css = 'parent-sass-css';
     $bootsstrap_css = 'bootstrap_css';
     $fontawesome_css = 'fontawesome-css';
+    $yarrp_style  = 'yarp-style';
   
     wp_enqueue_style('child-style',
         get_stylesheet_directory_uri() . '/style.css',

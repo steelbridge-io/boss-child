@@ -21,6 +21,7 @@
   
   <article <?php post_class(); ?>>
     <header>
+      
       <div class="post-thumb">
         <?php
         if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
@@ -28,6 +29,7 @@
         }
         ?>
       </div><!-- /.post-thumb -->
+      
       <h1 class="entry-title"><?php the_title(); ?></h1>
       <h4 class="subtitle"><?php echo $sub; ?></h4>
   
@@ -105,6 +107,7 @@
             </tr>
           </table>
         </div>
+        
         <div id="prog-info" class="col-sm-6">
           <h4>Program Information</h4>
           <table>
@@ -122,10 +125,10 @@
             </tr>
           </table>
         </div>
+        
       </div><!-- end of .prog-meta .row -->
       
-     
-    
+      
     </header>
     <!--<div class="entry-content">
       <?php //the_content(); ?>
@@ -158,7 +161,7 @@
     
     <div class="prog-yarpp row">
       <div class="col-sm-12">
-        <h4>Related Posts</h4>
+        <h4>Related Posts yay</h4>
         <?php related_posts(); ?>
       </div>
     </div><!-- / .prog-yarpp -->
