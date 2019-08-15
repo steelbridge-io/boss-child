@@ -36,7 +36,7 @@ function news_loop() {
           <img src="<?php echo $thumb_url; ?>" alt="...">
           <div class="panel panel-default mt-1618">
             <div class="caption">
-          <p><?php echo get_the_date(); ?></p>
+              <p>PUBLISHED:<strong><?php echo get_the_date(); ?></strong></p>
           <div class="entry-content">
             <?php echo the_excerpt(); ?>
             <a href="<?php echo get_permalink(); ?>"> ... Read more</a>
