@@ -1,8 +1,9 @@
 <?php
 
-require_once( get_stylesheet_directory() . '/lib/gutenberg.php');
-require_once( get_stylesheet_directory() . '/lib/category-temp-settings.php');
-require_once( get_stylesheet_directory() . '/lib/front-page-blog.php');
+require_once( get_stylesheet_directory() . '/lib/gutenberg.php' );
+require_once( get_stylesheet_directory() . '/lib/category-temp-settings.php' );
+require_once( get_stylesheet_directory() . '/lib/front-page-blog.php' );
+require_once( get_stylesheet_directory() . '/lib/login-custom.php' );
   
   add_action('wp_enqueue_scripts', 'boss_enqueue_styles_scripts');
   function boss_enqueue_styles_scripts()
