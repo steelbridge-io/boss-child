@@ -7,7 +7,7 @@
   <?php get_search_form(); ?>
 <?php endif; ?>
 
-<?php if( is_category( array('events-archive', 'events') ) ) { ?>
+<?php if( is_category( array('events-archive', 'events', 'news') ) ) { ?>
 <div class="masonry row">
 <?php while (have_posts()) : the_post();
   

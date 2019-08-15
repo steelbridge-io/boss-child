@@ -13,6 +13,8 @@
 
     - Bootstrap
     - Button
+    - Color
+    - Front Page
     - JetPack
     - Navigation
     - Sign Up
@@ -21,18 +23,30 @@
 :root {
     --boss-orange: #f2830a;
     --boss-btn-hover: #77715E;
+    --card-bg-color: #E5E2D6;
+    --font-brown: #77715e;
+}
+.mt-1618 {
+    margin-top: 1.618em;
+}
+.mb-1618 {
+    margin-bottom: 1.618em;
 }
 /** Bootstrap
 ============================ */
 *, *:before, *:after {box-sizing:  border-box !important;}
 
+.row-padding {
+    padding: 1.618em !important;
+}
 .masonry.row {
     -moz-column-width: 15em;
     -webkit-column-width: 15em;
     -moz-column-gap: 1em;
     -webkit-column-gap:1em;
 }
-.masonry.row .thumbnail {
+.masonry.row .thumbnail,
+.main.col-md-9.clearfix .col-md-4 .thumbnail {
     background-color: #e5e2d6;
     padding-top: 1.618em;
 }
@@ -48,6 +62,11 @@
 }
 /** Button
 ============================ */
+#remaining .button.button-news {
+    display: inline-block;
+    margin-top: 1.618em !important;
+    margin-bottom: 1.618em !important;
+}
 .btn.btn-boss {
     padding: 2rem 8.389rem;
     font-size: 100%;
@@ -77,6 +96,18 @@
 .btn-boss.active,
 .open .dropdown-toggle.btn-boss {
     background-image: none;
+}
+/**
+=============================*/
+.card-bg-color {
+    background-color: var(--card-bg-color);
+}
+/** Front Page
+============================ */
+.row.card-bg-color.row-padding span.news-front-page-title {
+    text-align: center;
+    font-size: 36px;
+    color: var(--font-brown);
 }
 /** JetPack
 ============================ */

@@ -30,7 +30,15 @@
     </div>
   </div><!-- END OF #mission -->
   
-  
+  <div class="row card-bg-color row-padding">
+    <h2 class="news-front-page-title">Latest News</h2>
+    <div class="col-12">
+    <?php do_action('front_page_news'); ?>
+    </div>
+  </div>
+  <div id="remaining">
+    <a class="button button-news" href="/category/news/" title="More News">More News Here...</a>
+  </div>
   
   <!-- <div class="row" id="features"> -->
     
@@ -68,7 +76,8 @@
   
   
   <div class="content">
-    <div class="row" id="social-media">
+    <div class="row card-bg-color row-padding" id="social-media">
+      <h2 class="news-front-page-title">Social News</h2>
       <div class="col-md-6">
         <div class="fb-page" data-href="https://www.facebook.com/boss.self.sufficiency/" data-width="500" data-height="600" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false" data-show-posts="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/boss.self.sufficiency/"><a href="https://www.facebook.com/boss.self.sufficiency/">Building Opportunities for Self-Sufficiency (BOSS)</a></blockquote></div></div>
         <div id="fb-root"></div>
