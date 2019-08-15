@@ -24,37 +24,40 @@ function news_loop() {
     while ( $query->have_posts() ) : $query->the_post();  ?>
       
       <div class="col-md-6">
-      
-      <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
-      <?php  if ( has_post_thumbnail() ) { ?>
-        <div class="thumbnail row-padding">
-          <?php
-          $thumb_id = get_post_thumbnail_id();
-          $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
-          $thumb_url = $thumb_url_array[0];
-          ?>
-          <img src="<?php echo $thumb_url; ?>" alt="...">
-          <div class="panel panel-default mt-1618">
-            <div class="caption">
-              <p>PUBLISHED:<strong><?php echo get_the_date(); ?></strong></p>
-          <div class="entry-content">
-            <?php echo the_excerpt(); ?>
-            <a href="<?php echo get_permalink(); ?>"> ... Read more</a>
-          </div>
+        
+        <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+        <?php  if ( has_post_thumbnail() ) { ?>
+          <div class="thumbnail row-padding">
+            <?php
+            $thumb_id = get_post_thumbnail_id();
+            $thumb_url_array = wp_get_attachment_image_src($thumb_id, 'thumbnail-size', true);
+            $thumb_url = $thumb_url_array[0];
+            ?>
+            <img src="<?php echo $thumb_url; ?>" alt="...">
+            <div class="panel panel-default mt-1618">
+              <div class="caption">
+                <p>PUBLISHED:&nbsp;<strong><?php echo get_the_date(); ?></strong></p>
+                <div class="entry-content">
+                  <?php echo the_excerpt(); ?>
+                  <a href="<?php echo get_permalink(); ?>"> ... Read more</a>
+                </div>
+              </div>
             </div>
           </div>
-        </div>
-      <?php } else { ?>
-        <div class="thumbnail row-padding">
-        <div class="entry-content">
-          <?php echo the_excerpt(); ?>
-          <a href="<?php echo get_permalink(); ?>"> ... Read more</a>
-        </div>
-        </div>
+        <?php } else { ?>
+          <div class="thumbnail row-padding">
+            <div class="panel panel-default mt-1618">
+              <div class="caption">
+                <p>PUBLISHED:&nbsp;<strong><?php echo get_the_date(); ?></strong></p>
+                <div class="entry-content">
+                  <?php echo the_excerpt(); ?>
+                  <a href="<?php echo get_permalink(); ?>"> ... Read more</a>
+                </div>
+              </div>
+            </div>
+          </div>
         
-      
-      <?php } ?>
-      
+        <?php } ?>
       
       </div>
     
