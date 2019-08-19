@@ -2,6 +2,7 @@
   
   <div class="row" id="footer-widgets">
     <?php dynamic_sidebar('sidebar-footer'); ?>
+    <h2>Are you homeless...? Call 211</h2>
   </div><!-- END OF #footer-widgets -->
   
   <div id="very-bottom" class="row">
